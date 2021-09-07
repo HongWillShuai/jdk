@@ -23,11 +23,12 @@
  *
  */
 
+#include "precompiled.hpp"
+
 #include "asm/assembler.hpp"
 #include "asm/assembler.inline.hpp"
 #include "macroAssembler_aarch64.hpp"
 #include "memory/resourceArea.hpp"
-#include "precompiled.hpp"
 #include "runtime/stubRoutines.hpp"
 
 void MacroAssembler::aesecb_decrypt(Register from, Register to, Register key, Register keylen) {
