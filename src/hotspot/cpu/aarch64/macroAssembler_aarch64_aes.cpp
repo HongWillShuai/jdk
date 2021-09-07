@@ -487,6 +487,9 @@ void MacroAssembler::ghash_modmul(FloatRegister result,
 }
 
 // Interleaved GHASH processing.
+//
+// Clobbers all vector registers.
+//
 void MacroAssembler::ghash_processBlocks_wide(address field_polynomial, Register state,
                                               Register subkeyH,
                                               Register data, Register blocks, int unrolls) {
